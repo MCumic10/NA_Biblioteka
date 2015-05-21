@@ -17,7 +17,7 @@ namespace NA_Biblioteka
         public int indeks;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (autorTB.Text != "" && naslovTB.Text != "")
+            if (naslovTB.Text != "" && libIDTB.Text != "" && comboBox1.SelectedIndex >= 0)
             {
                 knjigaTableAdapter.UpdateQueryByID(autorTB.Text, naslovTB.Text, gradTB.Text, godinaTB.Text, izdavacTB.Text, indeks);
                 MessageBox.Show("Podaci knjige \"" + naslovTB.Text + "\" su uspešno izmenjena.", "Biblioteka", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -25,7 +25,7 @@ namespace NA_Biblioteka
             }
             else
             {
-                MessageBox.Show("Morate popuniti polja \"Autor\" i \"Naslov\".", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Morate popuniti polja \"Naslov\" i \"LibID\".", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public BibliotekaDataSet.KnjigaRow red;
@@ -54,13 +54,31 @@ namespace NA_Biblioteka
             }
             catch { } try
             {
-                textBox1.Text = red.LibID;
+                libIDTB.Text = red.LibID.Substring(red.LibID.LastIndexOf('-') + 1);
+                if (red.LibID.StartsWith("REL")) { comboBox1.SelectedIndex = 0; }
+                if (red.LibID.StartsWith("IST")) { comboBox1.SelectedIndex = 1; }
+                if (red.LibID.StartsWith("FIL")) { comboBox1.SelectedIndex = 2; }
+                if (red.LibID.StartsWith("MIT")) { comboBox1.SelectedIndex = 3; }
             }
             catch { } try
             {
-                textBox2.Text = red.Vrednost.ToString();
+                vrednostTB.Text = red.Vrednost.ToString();
             }
             catch { }
+        }
+        private bool prvaPromena = true;
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!prvaPromena)
+            {
+                int nextVal = (int)knjigaTableAdapter.maxLibIDSuffix(comboBox1.Text) + 1;
+                libIDTB.Text = nextVal.ToString();
+            }
+            else { prvaPromena = false; }
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

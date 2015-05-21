@@ -42,7 +42,7 @@ namespace NA_Biblioteka
             }
             else
             {
-                MessageBox.Show("Morate popuniti polja \"Autor\", \"Naslov\" i \"LibID\".", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Morate popuniti polja \"Naslov\" i \"LibID\".", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
