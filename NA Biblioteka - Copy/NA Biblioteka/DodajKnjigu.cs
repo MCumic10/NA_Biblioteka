@@ -36,7 +36,7 @@ namespace NA_Biblioteka
         {
             if (naslovTB.Text != "" && libIDTB.Text != "" && comboBox1.SelectedIndex>=0)
             {
-                knjigaTableAdapter.Insert(autorTB.Text, naslovTB.Text, gradTB.Text, godinaTB.Text, izdavacTB.Text, libIDTB.Text, "", false, DateTime.Now, Convert.ToDecimal(string.IsNullOrEmpty( vrednostTB.Text)?"0":vrednostTB.Text));
+                knjigaTableAdapter.Insert(autorTB.Text, naslovTB.Text, gradTB.Text, godinaTB.Text, izdavacTB.Text,comboBox1.Text + libIDTB.Text, "", false, DateTime.Now, Convert.ToDecimal(string.IsNullOrEmpty( vrednostTB.Text)?"0":vrednostTB.Text));
                 MessageBox.Show("Knjiga \"" + naslovTB.Text + "\" je uspešno dodata.", "Biblioteka", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
