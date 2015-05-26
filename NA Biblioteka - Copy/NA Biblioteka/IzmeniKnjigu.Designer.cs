@@ -67,7 +67,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(13, 232);
+            label1.Location = new System.Drawing.Point(15, 238);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(52, 13);
             label1.TabIndex = 25;
@@ -76,7 +76,7 @@
             // libIDLabel
             // 
             libIDLabel.AutoSize = true;
-            libIDLabel.Location = new System.Drawing.Point(27, 198);
+            libIDLabel.Location = new System.Drawing.Point(29, 204);
             libIDLabel.Name = "libIDLabel";
             libIDLabel.Size = new System.Drawing.Size(38, 13);
             libIDLabel.TabIndex = 26;
@@ -85,7 +85,7 @@
             // izdavacLabel
             // 
             izdavacLabel.AutoSize = true;
-            izdavacLabel.Location = new System.Drawing.Point(17, 96);
+            izdavacLabel.Location = new System.Drawing.Point(19, 102);
             izdavacLabel.Name = "izdavacLabel";
             izdavacLabel.Size = new System.Drawing.Size(48, 13);
             izdavacLabel.TabIndex = 24;
@@ -94,7 +94,7 @@
             // godinaLabel
             // 
             godinaLabel.AutoSize = true;
-            godinaLabel.Location = new System.Drawing.Point(21, 130);
+            godinaLabel.Location = new System.Drawing.Point(23, 136);
             godinaLabel.Name = "godinaLabel";
             godinaLabel.Size = new System.Drawing.Size(44, 13);
             godinaLabel.TabIndex = 23;
@@ -103,7 +103,7 @@
             // gradLabel
             // 
             gradLabel.AutoSize = true;
-            gradLabel.Location = new System.Drawing.Point(32, 164);
+            gradLabel.Location = new System.Drawing.Point(34, 170);
             gradLabel.Name = "gradLabel";
             gradLabel.Size = new System.Drawing.Size(33, 13);
             gradLabel.TabIndex = 18;
@@ -112,7 +112,7 @@
             // naslovLabel
             // 
             naslovLabel.AutoSize = true;
-            naslovLabel.Location = new System.Drawing.Point(22, 62);
+            naslovLabel.Location = new System.Drawing.Point(24, 68);
             naslovLabel.Name = "naslovLabel";
             naslovLabel.Size = new System.Drawing.Size(43, 13);
             naslovLabel.TabIndex = 16;
@@ -121,7 +121,7 @@
             // autorLabel
             // 
             autorLabel.AutoSize = true;
-            autorLabel.Location = new System.Drawing.Point(30, 28);
+            autorLabel.Location = new System.Drawing.Point(32, 34);
             autorLabel.Name = "autorLabel";
             autorLabel.Size = new System.Drawing.Size(35, 13);
             autorLabel.TabIndex = 13;
@@ -166,9 +166,9 @@
             "IST 30-201-",
             "FIL 20-201-",
             "MIT 50-201-"});
-            this.comboBox1.Location = new System.Drawing.Point(71, 195);
+            this.comboBox1.Location = new System.Drawing.Point(73, 201);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(107, 21);
+            this.comboBox1.Size = new System.Drawing.Size(170, 21);
             this.comboBox1.TabIndex = 27;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -177,7 +177,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.Location = new System.Drawing.Point(0, 288);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 43);
+            this.button1.Size = new System.Drawing.Size(298, 43);
             this.button1.TabIndex = 22;
             this.button1.Text = "Sačuvaj";
             this.button1.UseVisualStyleBackColor = true;
@@ -185,58 +185,58 @@
             // 
             // vrednostTB
             // 
-            this.vrednostTB.Location = new System.Drawing.Point(71, 229);
+            this.vrednostTB.Location = new System.Drawing.Point(73, 235);
             this.vrednostTB.Name = "vrednostTB";
-            this.vrednostTB.Size = new System.Drawing.Size(134, 20);
+            this.vrednostTB.Size = new System.Drawing.Size(197, 20);
             this.vrednostTB.TabIndex = 20;
             // 
             // libIDTB
             // 
-            this.libIDTB.Location = new System.Drawing.Point(175, 195);
+            this.libIDTB.Location = new System.Drawing.Point(240, 201);
             this.libIDTB.Name = "libIDTB";
             this.libIDTB.Size = new System.Drawing.Size(30, 20);
             this.libIDTB.TabIndex = 21;
             // 
             // izdavacTB
             // 
-            this.izdavacTB.Location = new System.Drawing.Point(71, 93);
+            this.izdavacTB.Location = new System.Drawing.Point(73, 99);
             this.izdavacTB.Name = "izdavacTB";
-            this.izdavacTB.Size = new System.Drawing.Size(134, 20);
+            this.izdavacTB.Size = new System.Drawing.Size(197, 20);
             this.izdavacTB.TabIndex = 19;
             // 
             // godinaTB
             // 
-            this.godinaTB.Location = new System.Drawing.Point(71, 127);
+            this.godinaTB.Location = new System.Drawing.Point(73, 133);
             this.godinaTB.Name = "godinaTB";
-            this.godinaTB.Size = new System.Drawing.Size(134, 20);
+            this.godinaTB.Size = new System.Drawing.Size(197, 20);
             this.godinaTB.TabIndex = 17;
             // 
             // gradTB
             // 
-            this.gradTB.Location = new System.Drawing.Point(71, 161);
+            this.gradTB.Location = new System.Drawing.Point(73, 167);
             this.gradTB.Name = "gradTB";
-            this.gradTB.Size = new System.Drawing.Size(134, 20);
+            this.gradTB.Size = new System.Drawing.Size(197, 20);
             this.gradTB.TabIndex = 15;
             // 
             // naslovTB
             // 
-            this.naslovTB.Location = new System.Drawing.Point(71, 59);
+            this.naslovTB.Location = new System.Drawing.Point(73, 65);
             this.naslovTB.Name = "naslovTB";
-            this.naslovTB.Size = new System.Drawing.Size(134, 20);
+            this.naslovTB.Size = new System.Drawing.Size(197, 20);
             this.naslovTB.TabIndex = 14;
             // 
             // autorTB
             // 
-            this.autorTB.Location = new System.Drawing.Point(71, 25);
+            this.autorTB.Location = new System.Drawing.Point(73, 31);
             this.autorTB.Name = "autorTB";
-            this.autorTB.Size = new System.Drawing.Size(134, 20);
+            this.autorTB.Size = new System.Drawing.Size(197, 20);
             this.autorTB.TabIndex = 12;
             // 
             // IzmeniKnjigu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(227, 331);
+            this.ClientSize = new System.Drawing.Size(298, 331);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vrednostTB);

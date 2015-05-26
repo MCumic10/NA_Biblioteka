@@ -129,42 +129,42 @@
             // 
             // autorTB
             // 
-            this.autorTB.Location = new System.Drawing.Point(73, 12);
+            this.autorTB.Location = new System.Drawing.Point(76, 12);
             this.autorTB.Name = "autorTB";
-            this.autorTB.Size = new System.Drawing.Size(134, 20);
+            this.autorTB.Size = new System.Drawing.Size(160, 20);
             this.autorTB.TabIndex = 0;
             // 
             // naslovTB
             // 
-            this.naslovTB.Location = new System.Drawing.Point(73, 46);
+            this.naslovTB.Location = new System.Drawing.Point(76, 46);
             this.naslovTB.Name = "naslovTB";
-            this.naslovTB.Size = new System.Drawing.Size(134, 20);
+            this.naslovTB.Size = new System.Drawing.Size(160, 20);
             this.naslovTB.TabIndex = 1;
             // 
             // gradTB
             // 
-            this.gradTB.Location = new System.Drawing.Point(73, 148);
+            this.gradTB.Location = new System.Drawing.Point(76, 148);
             this.gradTB.Name = "gradTB";
-            this.gradTB.Size = new System.Drawing.Size(134, 20);
+            this.gradTB.Size = new System.Drawing.Size(160, 20);
             this.gradTB.TabIndex = 2;
             // 
             // godinaTB
             // 
-            this.godinaTB.Location = new System.Drawing.Point(73, 114);
+            this.godinaTB.Location = new System.Drawing.Point(76, 114);
             this.godinaTB.Name = "godinaTB";
-            this.godinaTB.Size = new System.Drawing.Size(134, 20);
+            this.godinaTB.Size = new System.Drawing.Size(160, 20);
             this.godinaTB.TabIndex = 3;
             // 
             // izdavacTB
             // 
-            this.izdavacTB.Location = new System.Drawing.Point(73, 80);
+            this.izdavacTB.Location = new System.Drawing.Point(76, 80);
             this.izdavacTB.Name = "izdavacTB";
-            this.izdavacTB.Size = new System.Drawing.Size(134, 20);
+            this.izdavacTB.Size = new System.Drawing.Size(160, 20);
             this.izdavacTB.TabIndex = 4;
             // 
             // libIDTB
             // 
-            this.libIDTB.Location = new System.Drawing.Point(177, 182);
+            this.libIDTB.Location = new System.Drawing.Point(206, 182);
             this.libIDTB.Name = "libIDTB";
             this.libIDTB.Size = new System.Drawing.Size(30, 20);
             this.libIDTB.TabIndex = 5;
@@ -174,7 +174,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.Location = new System.Drawing.Point(0, 271);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 43);
+            this.button1.Size = new System.Drawing.Size(266, 43);
             this.button1.TabIndex = 6;
             this.button1.Text = "Sačuvaj";
             this.button1.UseVisualStyleBackColor = true;
@@ -182,9 +182,9 @@
             // 
             // vrednostTB
             // 
-            this.vrednostTB.Location = new System.Drawing.Point(73, 216);
+            this.vrednostTB.Location = new System.Drawing.Point(76, 216);
             this.vrednostTB.Name = "vrednostTB";
-            this.vrednostTB.Size = new System.Drawing.Size(134, 20);
+            this.vrednostTB.Size = new System.Drawing.Size(160, 20);
             this.vrednostTB.TabIndex = 5;
             // 
             // comboBox1
@@ -195,9 +195,9 @@
             "IST 30-201-",
             "FIL 20-201-",
             "MIT 50-201-"});
-            this.comboBox1.Location = new System.Drawing.Point(73, 182);
+            this.comboBox1.Location = new System.Drawing.Point(73, 181);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(107, 21);
+            this.comboBox1.Size = new System.Drawing.Size(133, 21);
             this.comboBox1.TabIndex = 11;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -237,7 +237,7 @@
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(232, 314);
+            this.ClientSize = new System.Drawing.Size(266, 314);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vrednostTB);
