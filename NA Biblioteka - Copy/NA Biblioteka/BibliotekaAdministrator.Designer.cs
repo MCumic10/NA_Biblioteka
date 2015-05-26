@@ -48,9 +48,12 @@
             this.SadrzajRTB = new System.Windows.Forms.RichTextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
             this.sacuvajUExcelBTN = new System.Windows.Forms.Button();
-            this.knjigeTkuciMesecBTN = new System.Windows.Forms.Button();
-            this.knjigePrethodniMesecBTN = new System.Windows.Forms.Button();
             this.loginBTN = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.izmeniKorisnikaBTN = new System.Windows.Forms.Button();
@@ -290,15 +293,64 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.dateTimePicker2);
+            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.sacuvajUExcelBTN);
-            this.groupBox3.Controls.Add(this.knjigeTkuciMesecBTN);
-            this.groupBox3.Controls.Add(this.knjigePrethodniMesecBTN);
             this.groupBox3.Location = new System.Drawing.Point(12, 503);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(172, 140);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Izveštaji";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(22, 49);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Do:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Od:";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(52, 45);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(110, 20);
+            this.dateTimePicker2.TabIndex = 8;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(52, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(110, 20);
+            this.dateTimePicker1.TabIndex = 8;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(10, 78);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(152, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Prikaži izveštaj";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // sacuvajUExcelBTN
             // 
@@ -309,26 +361,6 @@
             this.sacuvajUExcelBTN.Text = "Sačuvaj prikaz u excel";
             this.sacuvajUExcelBTN.UseVisualStyleBackColor = true;
             this.sacuvajUExcelBTN.Click += new System.EventHandler(this.sacuvajUExcelBTN_Click);
-            // 
-            // knjigeTkuciMesecBTN
-            // 
-            this.knjigeTkuciMesecBTN.Location = new System.Drawing.Point(10, 64);
-            this.knjigeTkuciMesecBTN.Name = "knjigeTkuciMesecBTN";
-            this.knjigeTkuciMesecBTN.Size = new System.Drawing.Size(152, 37);
-            this.knjigeTkuciMesecBTN.TabIndex = 7;
-            this.knjigeTkuciMesecBTN.Text = "Dodate knjige tekućeg meseca";
-            this.knjigeTkuciMesecBTN.UseVisualStyleBackColor = true;
-            this.knjigeTkuciMesecBTN.Click += new System.EventHandler(this.knjigeTkuciMesecBTN_Click);
-            // 
-            // knjigePrethodniMesecBTN
-            // 
-            this.knjigePrethodniMesecBTN.Location = new System.Drawing.Point(10, 19);
-            this.knjigePrethodniMesecBTN.Name = "knjigePrethodniMesecBTN";
-            this.knjigePrethodniMesecBTN.Size = new System.Drawing.Size(152, 39);
-            this.knjigePrethodniMesecBTN.TabIndex = 7;
-            this.knjigePrethodniMesecBTN.Text = "Dodate knjige prethodnog meseca";
-            this.knjigePrethodniMesecBTN.UseVisualStyleBackColor = true;
-            this.knjigePrethodniMesecBTN.Click += new System.EventHandler(this.knjigePrethodniMesecBTN_Click);
             // 
             // loginBTN
             // 
@@ -458,6 +490,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.knjigaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bibliotekaDataSet)).EndInit();
@@ -499,8 +532,11 @@
         private System.Windows.Forms.Button loginBTN;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button sacuvajUExcelBTN;
-        private System.Windows.Forms.Button knjigeTkuciMesecBTN;
-        private System.Windows.Forms.Button knjigePrethodniMesecBTN;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button2;
     }
 }

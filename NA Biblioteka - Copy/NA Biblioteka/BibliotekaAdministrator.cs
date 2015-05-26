@@ -358,6 +358,26 @@ namespace NA_Biblioteka
             {
                 MessageBox.Show("Greska pri cuvanju dokumenta. Proverite da dokument nije otvoren pa pokusajte ponovo.", "Greska", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTimePicker2.Value < dateTimePicker1.Value)
+            {
+                dateTimePicker1.Value = dateTimePicker2.Value;
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            string rowFilter = "";
+            rowFilter = "DatumUnosa < '" + dateTimePicker2.Value.Date.ToShortDateString() + "' AND DatumUnosa > '" + dateTimePicker1.Value.Date.ToShortDateString() + "'";
+
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
+            dataGridView1.Update();
+            farbajRedove();
         }  
     }
 
